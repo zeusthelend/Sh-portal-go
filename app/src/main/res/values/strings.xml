@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Shopping Hospitalar</string>
+    <string name="nav_dashboard">Início</string>
+    <string name="nav_davs">DAVs</string>
+    <string name="nav_chat">Chat</string>
+    <string name="nav_team">Equipe</string>
+    <string name="nav_meetings">Reuniões</string>
+    <string name="nav_reminders">Agendas</string>
+    <string name="nav_sales">Minhas Vendas</string>
+    <string name="nav_profile">Meu Perfil</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_welcome">Sejam bem-vindas(a) ao SHOPPING HOSPITALAR!</string>
+    <string name="dashboard_greeting">Olá, %1$s</string>
+    <string name="kpi_online_team">Funcionários online</string>
+    <string name="kpi_new_messages">Novas mensagens</string>
+    <string name="kpi_upcoming_meetings">Próximas reuniões</string>
+    <string name="kpi_documents">Documentos recentes</string>
+    <string name="kpi_overdue_davs">%1$d DAV(s) vencido(s)</string>
+
+    <!-- DAVs -->
+    <string name="davs_title">DAVs</string>
+    <string name="davs_subtitle">Acompanhe documentos e vencimentos por vendedor</string>
+    <string name="dav_status_open">Aberto</string>
+    <string name="dav_status_in_progress">Em andamento</string>
+    <string name="dav_status_completed">Concluído</string>
+    <string name="dav_status_cancelled">Desistiu</string>
+    <string name="new_dav_action">Novo DAV</string>
+    <string name="search_davs_placeholder">Buscar por número, cliente ou vendedor...</string>
+
+    <!-- Chat -->
+    <string name="chat_title">Chat Corporativo</string>
+    <string name="chat_type_message">Digite uma mensagem...</string>
+    <string name="chat_send">Enviar</string>
+
+    <!-- Meetings -->
+    <string name="meetings_title">Reuniões</string>
+    <string name="new_meeting">Nova Reunião</string>
+
+    <!-- Reminders -->
+    <string name="reminders_stock">Agenda do Estoque</string>
+    <string name="reminders_admin">Agenda Administrativa</string>
+    <string name="new_reminder">Novo Lembrete</string>
+</resources>

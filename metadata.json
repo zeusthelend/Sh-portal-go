@@ -1,0 +1,8 @@
+{
+  "name": "Shopping Hospitalar",
+  "description": "Portal corporativo Shopping Hospitalar: gestão de DAVs, equipe, avisos, reuniões e lembretes",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

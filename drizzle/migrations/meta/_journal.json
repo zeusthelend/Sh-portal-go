@@ -1,0 +1,153 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1790911655852,
+      "tag": "0000_migration",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1790913248890,
+      "tag": "0001_add_dav_and_notification_features",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1791006670166,
+      "tag": "0002_add_realtime_corporate_chat",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1791245147096,
+      "tag": "0003_add_firebase_push_tokens",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1791332243837,
+      "tag": "0004_chat_rpc_presence_pins_dav_delete",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1791339000000,
+      "tag": "0005_chat_presence_policy",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1791339600000,
+      "tag": "0006_reliable_chat_conversations",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1791420064379,
+      "tag": "0007_secure_member_positions_and_access_keys",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1791421000000,
+      "tag": "0008_approved_user_storage_access",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1791422000000,
+      "tag": "0009_chat_message_push_notifications",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "7",
+      "when": 1791504925841,
+      "tag": "0010_chat_push_and_private_audio_calls",
+      "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "7",
+      "when": 1791508843144,
+      "tag": "0011_restrict_member_and_brand_data",
+      "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "7",
+      "when": 1791567487000,
+      "tag": "0012_add_chat_group_members",
+      "breakpoints": true
+    },
+    {
+      "idx": 13,
+      "version": "7",
+      "when": 1791570000000,
+      "tag": "0013_chat_favorites_and_group_permissions",
+      "breakpoints": true
+    },
+    {
+      "idx": 14,
+      "version": "7",
+      "when": 1791600000000,
+      "tag": "0014_group_avatar_storage",
+      "breakpoints": true
+    },
+    {
+      "idx": 15,
+      "version": "7",
+      "when": 1791603600000,
+      "tag": "0015_repair_group_avatar_storage",
+      "breakpoints": true
+    },
+    {
+      "idx": 16,
+      "version": "7",
+      "when": 1791760000000,
+      "tag": "0016_restrict_dav_access_policies",
+      "breakpoints": true
+    },
+    {
+      "idx": 17,
+      "version": "7",
+      "when": 1791765000000,
+      "tag": "0017_employee_ban_pin_reactivation",
+      "breakpoints": true
+    },
+    {
+      "idx": 18,
+      "version": "7",
+      "when": 1791849600000,
+      "tag": "0018_dav_categories",
+      "breakpoints": true
+    },
+    {
+      "idx": 19,
+      "version": "7",
+      "when": 1791850200000,
+      "tag": "0019_animated_logo_settings",
+      "breakpoints": true
+    },
+    {
+      "idx": 20,
+      "version": "7",
+      "when": 1791850800000,
+      "tag": "0020_admin_only_publication_edits",
+      "breakpoints": true
+    }
+  ]
+}
