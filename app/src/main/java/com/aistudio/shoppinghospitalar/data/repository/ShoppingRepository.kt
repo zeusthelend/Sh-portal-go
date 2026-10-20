@@ -25,13 +25,22 @@ class ShoppingRepository {
 
     private val _teamProfiles = MutableStateFlow(
         listOf(
-            Profile("p1", "Anderson Silva", "Vendedor Hospitalar", "Vendas", UserStatus.ONLINE),
-            Profile("p2", "Dra. Camila Duarte", "Diretora Técnica", "Diretoria", UserStatus.ONLINE),
-            Profile("p3", "Carlos Eduardo Mendes", "Líder de Estoque", "Estoque", UserStatus.ONLINE),
-            Profile("p4", "Mariana Rios", "Gerente Administrativa", "Administrativo", UserStatus.AUSENTE),
-            Profile("p5", "Lucas Ferraz", "Consultor de Vendas", "Vendas", UserStatus.ONLINE),
-            Profile("p6", "Beatriz Santos", "Supervisora de Licitações", "Vendas", UserStatus.OCUPADO),
-            Profile("p7", "Rodrigo Nogueira", "Auxiliar de Logística", "Estoque", UserStatus.OFFLINE)
+            Profile("user-anderson-01", "Anderson Silva", "Vendedor Hospitalar & Administrador", "Vendas", UserStatus.ONLINE, "(11) 98765-4321", "anderson@shoppinghospitalar.com.br"),
+            Profile("emp-camila-02", "Dra. Camila Duarte", "Diretora Médica & Executiva", "Diretoria", UserStatus.ONLINE, "(11) 99876-5401", "camila.duarte@shoppinghospitalar.com.br"),
+            Profile("emp-fernando-03", "Dr. Fernando Silveira", "Diretor Operacional e Logística", "Diretoria", UserStatus.ONLINE, "(11) 99876-5402", "fernando.silveira@shoppinghospitalar.com.br"),
+            Profile("emp-carlos-04", "Carlos Eduardo Mendes", "Líder Geral de Estoque e Expedição", "Estoque", UserStatus.ONLINE, "(11) 97654-3210", "carlos.mendes@shoppinghospitalar.com.br"),
+            Profile("emp-beatriz-05", "Beatriz Santos", "Supervisora de Licitações Públicas", "Vendas", UserStatus.OCUPADO, "(11) 98765-4322", "beatriz.santos@shoppinghospitalar.com.br"),
+            Profile("emp-lucas-06", "Lucas Ferraz", "Consultor de Vendas Técnicas UTI", "Vendas", UserStatus.ONLINE, "(11) 98765-4323", "lucas.ferraz@shoppinghospitalar.com.br"),
+            Profile("emp-mariana-07", "Mariana Rios", "Especialista Comercial Hospitalar", "Vendas", UserStatus.AUSENTE, "(21) 98765-4324", "mariana.rios@shoppinghospitalar.com.br"),
+            Profile("emp-gabriel-08", "Gabriel Almeida", "Executivo de Contas Privadas", "Vendas", UserStatus.ONLINE, "(11) 98765-4325", "gabriel.almeida@shoppinghospitalar.com.br"),
+            Profile("emp-juliana-09", "Juliana Moreira", "Consultora de Órteses e Próteses", "Vendas", UserStatus.OFFLINE, "(16) 98765-4326", "juliana.moreira@shoppinghospitalar.com.br"),
+            Profile("emp-rodrigo-10", "Rodrigo Nogueira", "Conferente e Auditor de Lotes Cirúrgicos", "Estoque", UserStatus.ONLINE, "(11) 97654-3211", "rodrigo.nogueira@shoppinghospitalar.com.br"),
+            Profile("emp-marcos-11", "Marcos Vinicius", "Expedição de Emergência Hospitalar", "Estoque", UserStatus.OCUPADO, "(11) 97654-3212", "marcos.vinicius@shoppinghospitalar.com.br"),
+            Profile("emp-amanda-12", "Amanda Lima", "Supervisora de Esterilização de Insumos", "Estoque", UserStatus.ONLINE, "(11) 97654-3213", "amanda.lima@shoppinghospitalar.com.br"),
+            Profile("emp-renata-13", "Renata Cavalcanti", "Gerente Financeira e Faturamento", "Financeiro", UserStatus.ONLINE, "(11) 96543-2101", "renata.cavalcanti@shoppinghospitalar.com.br"),
+            Profile("emp-felipe-14", "Felipe Antunes", "Analista de Contratos e Notas Fiscais", "Administrativo", UserStatus.ONLINE, "(11) 96543-2102", "felipe.antunes@shoppinghospitalar.com.br"),
+            Profile("emp-larissa-15", "Larissa Prado", "Coordenadora de Recursos Humanos", "RH", UserStatus.AUSENTE, "(11) 96543-2103", "larissa.prado@shoppinghospitalar.com.br"),
+            Profile("emp-tiago-16", "Tiago Ramos", "Analista de TI e Sistemas Hospitalares", "Operacional", UserStatus.ONLINE, "(11) 96543-2104", "tiago.ramos@shoppinghospitalar.com.br")
         )
     )
     val teamProfiles: StateFlow<List<Profile>> = _teamProfiles.asStateFlow()

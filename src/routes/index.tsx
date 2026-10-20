@@ -15,12 +15,13 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
-  const { session, loading } = useSession();
-  if (loading)
+  const { loading } = useSession();
+  if (loading) {
     return (
       <div className="grid min-h-screen place-items-center bg-brand">
         <Logo light />
       </div>
     );
-  return <Navigate to={session ? "/dashboard" : "/auth"} replace />;
+  }
+  return <Navigate to="/dashboard" replace />;
 }

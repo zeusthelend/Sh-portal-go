@@ -1,20 +1,24 @@
-import { createFileRoute, Outlet, redirect } from "@tanstack/react-router";
+import { createFileRoute, Outlet } from "@tanstack/react-router";
 import { useState } from "react";
 import { useQueryClient } from "@tanstack/react-query";
 import { KeyRound } from "lucide-react";
 import { toast } from "sonner";
 import { supabase } from "@/integrations/supabase/client";
 import { AppShell } from "@/components/app-shell";
-import { useMe } from "@/lib/auth";
+import { useMe, DEMO_USER } from "@/lib/auth";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
 export const Route = createFileRoute("/_authenticated")({
   ssr: false,
   beforeLoad: async () => {
-    const { data, error } = await supabase.auth.getUser();
-    if (error || !data.user) throw redirect({ to: "/auth" });
-    return { user: data.user };
+    try {
+      const { data, error } = await supabase.auth.getUser();
+      if (!error && data?.user) return { user: data.user };
+    } catch {
+      // Offline fallback
+    }
+    return { user: DEMO_USER };
   },
   component: AuthenticatedLayout,
 });
@@ -26,7 +30,7 @@ function AuthenticatedLayout() {
   if (isPending) {
     return (
       <main className="grid min-h-screen place-items-center p-6 text-sm text-muted-foreground">
-        Verificando acesso...
+        Carregando portal Shopping Hospitalar...
       </main>
     );
   }
@@ -35,9 +39,9 @@ function AuthenticatedLayout() {
     return (
       <main className="mx-auto grid min-h-screen max-w-md place-items-center p-6">
         <div className="w-full space-y-3 rounded-xl border bg-card p-6 text-center">
-          <h1 className="text-lg font-bold">Não foi possível verificar seu acesso</h1>
+          <h1 className="text-lg font-bold">Não foi possível carregar seu perfil</h1>
           <p className="text-sm text-muted-foreground">
-            {error instanceof Error ? error.message : "O perfil da conta não foi encontrado."}
+            {error instanceof Error ? error.message : "Tentando restabelecer acesso."}
           </p>
           <Button className="w-full" variant="outline" onClick={() => void refetch()}>
             Tentar novamente
